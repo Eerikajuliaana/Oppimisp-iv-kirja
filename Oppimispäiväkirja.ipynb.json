@@ -1,0 +1,121 @@
+{
+ "cells": [
+  {
+   "cell_type": "markdown",
+   "metadata": {},
+   "source": [
+    "# Oppimispäiväkirja 1:\n",
+    "\n",
+    "Johdanto datatieteeseen 20201 oppimispäiväkirja. Ensimmäinen luento tällä kurssilla alkoi johdatuksella kurssin aiheeseen sekä ohjeisiin (oppimispäiväkirja ja harjoitustyö). Osallistuin reaaliaikaisesti ensimmäiselle luennolle, koska se töiden puolesta sopi aikatauluihin. Aineistona tässä oppimispäiväkirjassa käytän pitkälti luentoaineistoa, koska se oli kattava ja selkeä. Eli lähtökohtaisesti käsittelemäni asiat oppimispäiväkirjassa pohjautuvat luennoitsijan materiaaliin ellen toisin mainitse. \n",
+    "\n",
+    "Luennon pääteemat olivat datatieteen käsittelyssä eli siinä, miten datatiede määritellään, missä sitä tarvitaan ja millaiset tulevaisuuden näkymät \"alalla\" on. Datatiede koostuu neljästä eri kokonaisuudesta, jotka luennolla määriteltiin seuraaviksi: liiketoimintaosaaminen, ohjelmointi- ja tietokantaosaaminen, tilastollinen analyysi sekä datalähtöinen visualisointi. CRISP-DM -malli oli myös yksi ensimmäisellä luennolla käsitellyistä aiheista. Malli esittää prosessikuvauksen datatieteen prosesseista, mikä koostuu seuraavista kohdista: data - business understanding <-> dataunderstanding - data preparation - modeling- evaluation -deployment. \"Dataunderstanding\" tuntuu itselle ehkä näistä kaikista vieraammalta ja toivon, että kurssin aikana opin tästä lisää eli kuinka ymmärstää paremmin dataa. Monesti datan käsittely jää hyvin pintapuoliseksi,jolloin syvällinen ymmärrys sen käyttömahdollisuuksista heikkenee. Lisäksi käsiteltävinä aiheina olivat datan määrän suuri kasvu ja sen käsittely - nykyisen datan käsittely ja tekoäly painottuu koneoppimiseen. Teemana koneoppiminen ei ollut itselle aikaisemmin yhtään tuttua, vaikka termiä paljon kuuleekin. Luulen, että tästä luentokerrasta eniten minulle käteen jäi se, kuinka paljon oikeasti dataa on ja miten sen \"oikeanlainen\" käsittely voi tuoda haluttuja lopputuloksia etenkin liike-elämässä, joka itselleni on tärkeä teema opiskelujen ja työn kannalta.\n",
+    "\n",
+    "Tärkeimmät \"oivallukset\" luentokerralta:\n",
+    "- Jupyter Notebook, jonka päätin ottaa käyttöön ensimmäistä kertaa\n",
+    "- Datan suuri määrä ja se, kuinka sitä voidaan käsitellä\n",
+    "- Erilaiset työtehtävät datan parissa (Data Scientist tms.)\n",
+    "- CRISP-DM -malli oli täysin uusi termi itselleni\n",
+    "- Hans Roslingin video oli hyvin mielenkiintoinen ja avasi omat silmät\n",
+    "\n",
+    "\"Parannusaiheita\" on hankala keksiä, mielestäni luentoa oli mukava kuunnella ja pysyi suhteellisen hyvin kärryillä. Ehkä sellainen parannusehdotus, että kaikki uudet järjestelmät eivät olleet itselleni tuttuja ennestään, joten ne vähän sekottivat alkuun. Toisaalta oma pohjatietoni ei kurssille vastaa vaadittua, joten sikäli ymmärrän, että aivan \"nollasta\" ei voi lähteä liikkeelle. Toinen parannusehdotus on, että mielestäni luentomateriaalit ovat hyvin hajanaisesti eri paikoissa, joka hankaloittaa vähän tiedonhakua. \n",
+    "\n"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 6,
+   "metadata": {},
+   "outputs": [
+    {
+     "name": "stdout",
+     "output_type": "stream",
+     "text": [
+      "hello word\n"
+     ]
+    }
+   ],
+   "source": [
+    "print ('hello word')"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 21,
+   "metadata": {},
+   "outputs": [],
+   "source": [
+    "import pandas as pd"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 31,
+   "metadata": {},
+   "outputs": [
+    {
+     "name": "stdout",
+     "output_type": "stream",
+     "text": [
+      "1.1.3\n"
+     ]
+    }
+   ],
+   "source": [
+    "print(pd.__version__)"
+   ]
+  },
+  {
+   "cell_type": "markdown",
+   "metadata": {},
+   "source": [
+    "# Oppimispäiväkirja 2. \n",
+    "\n",
+    "Tällä kerralla luennon aiheena oli datan kerääminen ja jalostaminen. En päässyt osallistumaan reaaliaikaisesti opetukseen, koska olin töissä mutta katsoin luennon jälkeenpäin itse. Pääasiassa käytän hyväksi Jupyter Notebookissa ollutta materiaalia eli materiaalia, mitä luennoitsija on koonnut luennolle. Mikäli käytän muuta materiaalia, ilmoitan siitä erikseen.\n",
+    "\n",
+    "Aluksi käsittelyssä oli datatieteenprosessi, joka jakautuu seuraaviin päävaiheisiin: tiedon esikäsittely, vuoropuhelu analyysin ja reflektion välillä ja lopputulosten viestiminen vastaanottajalle soveltuvassa muodossa. Tutuin vaihe itselleni näistä on viimeinen, eli vastaanottajalle viestiminen. Tiedon esikäsittely on vaikeampaa, koska en omaa tällä hetkellä ainakaan vielä sellaisia taitoja, joiden avulla osaisin käsitellä erityisen paljon tietoa alussa. Mielenkiintoista oli se, kuinka dataa ja tietoa voidaan hyödyntää liike-elämässä, koska se on itselleni läheinen aihe. Aika pienessä osassa yrityksistä on oma data-analytiikan tiimi, joka varmasti näkyy siinä, että dataa ei osata yrityksissä hyödyntää täysissä määrin ja oikein. \n",
+    "\n",
+    "Ryömijät ja raapijat olivat termeinä tässä yhteydessä itselleni uusia. Siihen liittyvät koodit vaikuttivat hieman monimutkaisilta, mutta ehkä harjoittelussa ne aukenee itsellekin hieman paremmin. Lopussa \"alkuohjeet\" Pandasin käyttöön olivat hyvät, koska tuskailin sen kanssa ennen kuin kerkesin katsoa luennon ja diat. Tämä ainakin auttoi siinä, että sain Pandasin käyttöön ja \"yhdistettyä\" Jupyterin kanssa. \n",
+    "\n",
+    "Tärkeimmät oivallukset:\n",
+    "- Datatieteenprosessi: mitä itse osaan ja mitä en todellakaan osaa\n",
+    "- Datan hyödyntäminen liike-elämässä: yritykset hyödyntävät sitä vielä \"liian\" vähän ainakin omasta mielestä -> toivottavasti tulevaisuudessa voin olla vaikuttamassa tähän!\n",
+    "- Pandas, luentomateriaalit auttoivat ymmärtämään alkuun pääsemisessä Pandasin kanssa\n",
+    "- Minua kiinnostaa datan hyödyntäminen liiketoiminnassa, mutta ei ehkä suoranaisesti menetelmät tai itse datan esikäsittely\n",
+    "- Positiivisempi kuva siitä, että voin itsekin opetella käyttämään Pythonia, Jupyterya, Pandasia tms. Aikaisemmin ajattelin, että ne ovat liian vaikeita\n",
+    "\n",
+    "Parannettavaa ehkä luennolle: olisin voinut tarvita lisäapua raapijoiden ja ryömijöiden kanssa, mutta muuten ei mitään! En toki päässyt reaaliaikaisesti luennolle osallistumaan, joka toki voi vaikuttaa asiaan.\n",
+    "\n"
+   ]
+  },
+  {
+   "cell_type": "markdown",
+   "metadata": {},
+   "source": [
+    "# Oppimispäiväkirja 3.\n",
+    "\n",
+    "Tällä kerralla aiheena oli koneoppiminen sekä oppimispäiväkirjaan liittyvä kysymys. Tämä kerran luennon katsoin myös jälkikäteen, koska töiden puolesta en voinut osallistua reaaliaikaisesti luennolle. "
+   ]
+  }
+ ],
+ "metadata": {
+  "kernelspec": {
+   "display_name": "Python 3",
+   "language": "python",
+   "name": "python3"
+  },
+  "language_info": {
+   "codemirror_mode": {
+    "name": "ipython",
+    "version": 3
+   },
+   "file_extension": ".py",
+   "mimetype": "text/x-python",
+   "name": "python",
+   "nbconvert_exporter": "python",
+   "pygments_lexer": "ipython3",
+   "version": "3.8.5"
+  }
+ },
+ "nbformat": 4,
+ "nbformat_minor": 4
+}
